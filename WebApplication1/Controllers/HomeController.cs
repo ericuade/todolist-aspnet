@@ -18,6 +18,26 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        // Display a form for creating a new task
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // Mark a task as complete
+        public IActionResult Complete()
+        {
+            // database logic
+            return RedirectToAction("Index");
+        }
+
+        // Add a new task to the database
+        public ActionResult CreateNew()
+        {
+            return RedirectToAction("Index");
+        }
+
+
         public IActionResult Privacy()
         {
             return View();
